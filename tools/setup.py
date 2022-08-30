@@ -40,7 +40,7 @@ setup(
         'resource',
         'filelock<3.3.0',
         'setuptools>=36.7.2',
-        'svn+=1.0.1,'
+        'svn>=1.0.1',
     ],
     setup_requires=[
         'pytest-runner',
@@ -65,7 +65,7 @@ setup(
             'opengrok-projadm=opengrok_tools.projadm:main',
             'opengrok-reindex-project=opengrok_tools.reindex_project:main',
             'opengrok-sync=opengrok_tools.sync:main',
-            'whl-svn-sync=opengrok_tools.whl_svn_sync:main'
+            'vcs-importer=opengrok_tools.vcs_importer:main'
         ]
     },
 )
