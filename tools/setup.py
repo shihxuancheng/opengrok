@@ -37,6 +37,7 @@ setup(
         'resource',
         'filelock<3.3.0',
         'setuptools>=36.7.2',
+        'svn+=1.0.1,'
     ],
     setup_requires=[
         'pytest-runner',
