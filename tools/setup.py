@@ -1,10 +1,13 @@
 import os
 from setuptools import setup
+import ssl
 
 from src.main.python.opengrok_tools.version import __version__ as version
 
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 def readme():
     with open(os.path.join(SCRIPT_DIR, 'README-dist.txt'), 'r') as readme:
@@ -61,6 +64,7 @@ setup(
             'opengrok-projadm=opengrok_tools.projadm:main',
             'opengrok-reindex-project=opengrok_tools.reindex_project:main',
             'opengrok-sync=opengrok_tools.sync:main',
+            'whl-svn-sync=opengrok_tools.whl_svn_sync:main'
         ]
     },
 )
