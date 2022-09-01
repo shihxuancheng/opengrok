@@ -50,8 +50,7 @@ from opengrok_tools.utils.exitvals import SUCCESS_EXITVAL
 from opengrok_tools.utils.mirror import check_configuration
 from opengrok_tools.mirror import OPENGROK_NO_MIRROR_ENV
 
-
-fs_root = os.path.abspath('.').split(os.path.sep)[0] + os.path.sep
+fs_root = os.path.abspath('..').split(os.path.sep)[0] + os.path.sep
 if os.environ.get('OPENGROK_TOMCAT_ROOT'):  # debug only
     tomcat_root = os.environ.get('OPENGROK_TOMCAT_ROOT')
 else:
@@ -585,24 +584,22 @@ def main():
     # Start Tomcat last. It will be the foreground process.
     logger.info("Starting Tomcat")
     global tomcat_popen
-    tomcat_popen = subprocess.Popen([os.path.join(tomcat_root, 'bin',
-                                                  'catalina.sh'),
-                                    'run'])
+    tomcat_popen = subprocess.Popen([os.path.join(tomcat_root, 'bin', 'catalina.sh'), 'run'])
     tomcat_popen.wait()
 
 
-def signal_handler(signum, frame):
-    print("Received signal {}".format(signum))
-
-    global tomcat_popen
-    print("Terminating Tomcat {}".format(tomcat_popen))
-    tomcat_popen.terminate()
-
-    sys.exit(0)
+# def signal_handler(signum, frame):
+#     print("Received signal {}".format(signum))
+#
+#     global tomcat_popen
+#     print("Terminating Tomcat {}".format(tomcat_popen))
+#     tomcat_popen.terminate()
+#
+#     sys.exit(0)
 
 
 if __name__ == "__main__":
-    signal.signal(signal.SIGTERM, signal_handler)
-    signal.signal(signal.SIGINT, signal_handler)
+    # signal.signal(signal.SIGTERM, signal_handler)
+    # signal.signal(signal.SIGINT, signal_handler)
 
     main()

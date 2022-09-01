@@ -1,0 +1,314 @@
+repositories:
+  whl-svn:
+    host: http://svn.wanhai.com/svn
+    username: #vcs username
+    password: #vcs password
+systems:
+  #  systems under /
+  ACT:
+    repository: whl-svn
+    web-path: /act/web
+    siapp-path: /act/sisapp
+  AMSCMS:
+    repository: whl-svn
+    web-path: /amscms/web
+    siapp-path: /amscms/sisapp
+  ARM:
+    repository: whl-svn
+    web-path: /arm/web
+    siapp-path: /arm/sisapp
+  EDI:
+    repository: whl-svn
+    web-path: /edi/web
+    siapp-path: /edi/sisapp
+  ERS:
+    repository: whl-svn
+    web-path: /ers/web
+    siapp-path: /ers/sisapp
+  FMS:
+    repository: whl-svn
+    web-path: /fms/web
+    siapp-path: /fms/sisapp
+  IAL:
+    repository: whl-svn
+    web-path: /ial/web
+    siapp-path: /ial/sisapp
+  ITM:
+    repository: whl-svn
+    web-path: /itm/web
+    siapp-path: /itm/sisapp
+  IVT:
+    repository: whl-svn
+    web-path: /ivt/web
+    siapp-path: /ivt/sisapp
+  MFN:
+    repository: whl-svn
+    web-path: /mfn/web
+    siapp-path: /mfn/sisapp
+  MFT:
+    repository: whl-svn
+    web-path: /mft/web
+    siapp-path: /mft/sisapp
+  PSF:
+    repository: whl-svn
+    web-path: /psf/web
+    siapp-path: /psf/sisapp
+  SAS:
+    repository: whl-svn
+    web-path: /sas/web
+    siapp-path: /sas/sisapp
+  SEC:
+    repository: whl-svn
+    web-path: /sec/web
+    siapp-path: /sec/sisapp
+  SRS:
+    repository: whl-svn
+    web-path: /srs/web
+    siapp-path: /srs/sisapp
+  TML:
+    repository: whl-svn
+    web-path: /tml/web
+    siapp-path: /tml/sisapp
+  VSL:
+    repository: whl-svn
+    web-path: /vsl/web
+    siapp-path: /vsl/sisapp
+    #systems under /whl
+  BCS:
+    repository: whl-svn
+    web-path: /whl/web/bcs
+  BFS:
+    repository: whl-svn
+    web-path: /whl/web/bfs
+    sisapp-path: /whl/sisapp/BFS
+  BKG:
+    repository: whl-svn
+    web-path: /whl/web/bkg
+    sisapp-path: /whl/sisapp/BKG
+  CCM:
+    repository: whl-svn
+    web-path: /whl/web/ccm
+    sisapp-path: /whl/sisapp/CCM
+  CFS:
+    repository: whl-svn
+    web-path: /whl/web/cfs
+    sisapp-path: /whl/sisapp/CFS
+  CMR:
+    repository: whl-svn
+    web-path: /whl/web/cmr
+    sisapp-path: /whl/sisapp/CMR
+  COM:
+    repository: whl-svn
+    web-path: /whl/web/com
+    sisapp-path: /whl/sisapp/COM
+  CRA:
+    repository: whl-svn
+    web-path: /whl/web/cra
+    sisapp-path: /whl/sisapp/CRA
+  CRS:
+    repository: whl-svn
+    web-path: /whl/web/crs
+    sisapp-path: /whl/sisapp/CRS
+  CSS:
+    repository: whl-svn
+    web-path: /whl/web/css
+    sisapp-path: /whl/sisapp/CSS
+  CTS:
+    repository: whl-svn
+    web-path: /whl/web/cts
+    sisapp-path: /whl/sisapp/CTS
+  DDS:
+    repository: whl-svn
+    web-path: /whl/web/dds
+    sisapp-path: /whl/sisapp/DDS
+  DGS:
+    repository: whl-svn
+    web-path: /whl/web/dgs
+    sisapp-path: /whl/sisapp/DGS
+  DSS:
+    repository: whl-svn
+    sisapp-path: /whl/sisapp/DSS
+  ECS:
+    repository: whl-svn
+    web-path: /whl/web/ecs
+    sisapp-path: /whl/sisapp/ECS
+  EIS:
+    repository: whl-svn
+    web-path: /whl/web/eis
+    sisapp-path: /whl/sisapp/EIS
+  ELS:
+    repository: whl-svn
+    web-path: /whl/web/els
+    sisapp-path: /whl/sisapp/ELS
+  EMS:
+    repository: whl-svn
+    web-path: /whl/web/ems
+    sisapp-path: /whl/sisapp/EMS
+  EPM:
+    repository: whl-svn
+    web-path: /whl/web/epm
+    sisapp-path: /whl/sisapp/EPM
+  EWC:
+    repository: whl-svn
+    web-path: /whl/web/ewc
+    sisapp-path: /whl/sisapp/EWC
+  FAX:
+    repository: whl-svn
+    sisapp-path: /whl/sisapp/FAX
+  GCS:
+    repository: whl-svn
+    web-path: /whl/web/gcs
+    sisapp-path: /whl/sisapp/GCS
+  HAS:
+    repository: whl-svn
+    sisapp-path: /whl/sisapp/HAS
+  IHD:
+    repository: whl-svn
+    web-path: /whl/web/ihd
+    sisapp-path: /whl/sisapp/IHD
+  LIB:
+    repository: whl-svn
+    web-path: /whl/web/lib
+    sisapp-path: /whl/sisapp/LIB
+  LMR:
+    repository: whl-svn
+    web-path: /whl/web/lmr
+    sisapp-path: /whl/sisapp/LMR
+  OBS:
+    repository: whl-svn
+    web-path: /whl/web/obs
+    sisapp-path: /whl/sisapp/OBS
+  OOC:
+    repository: whl-svn
+    web-path: /whl/web/ooc
+    sisapp-path: /whl/sisapp/OOC
+  PCR:
+    repository: whl-svn
+    sisapp-path: /whl/sisapp/PCR
+  PPT:
+    repository: whl-svn
+    web-path: /whl/web/ppt
+    sisapp-path: /whl/sisapp/PPT
+  QAD:
+    repository: whl-svn
+    web-path: /whl/web/qad
+    sisapp-path: /whl/sisapp/QAD
+  REB:
+    repository: whl-svn
+    web-path: /whl/web/reb
+    sisapp-path: /whl/sisapp/REB
+  RFQ:
+    repository: whl-svn
+    web-path: /whl/web/rfq
+    sisapp-path: /whl/sisapp/RFQ
+  RSS:
+    repository: whl-svn
+    web-path: /whl/web/rss
+    sisapp-path: /whl/sisapp/RSS
+  SKD:
+    repository: whl-svn
+    web-path: /whl/web/skd
+    sisapp-path: /whl/sisapp/SKD
+  SSM:
+    repository: whl-svn
+    web-path: /whl/web/ssm
+    sisapp-path: /whl/sisapp/SSM
+  SSS:
+    repository: whl-svn
+    web-path: /whl/web/sss
+    sisapp-path: /whl/sisapp/SSS
+  TSM:
+    repository: whl-svn
+    sisapp-path: /whl/sisapp/TSM
+  VRM:
+    repository: whl-svn
+    web-path: /whl/web/vrm
+    sisapp-path: /whl/sisapp/VRM
+  WAS:
+    repository: whl-svn
+    web-path: /whl/web/was
+    sisapp-path: /whl/sisapp/WAS
+  WCS:
+    repository: whl-svn
+    web-path: /whl/web/wcs
+    sisapp-path: /whl/sisapp/WCS
+  WHL:
+    repository: whl-svn
+    web-path: /whl/web/whl
+  ZKT:
+    repository: whl-svn
+    web-path: /whl/web/zkt
+    sisapp-path: /whl/sisapp/ZKT
+  ZZZ:
+    repository: whl-svn
+    web-path: /whl/web/zzz
+  #  systems under /fin
+  APM:
+    repository: whl-svn
+    web-path: /fin/web/apm
+    sisapp-path: /fin/sisapp/APM
+  APS:
+    repository: whl-svn
+    web-path: /fin/web/aps
+    sisapp-path: /fin/sisapp/APS
+  ARS:
+    repository: whl-svn
+    web-path: /fin/web/ars
+    sisapp-path: /fin/sisapp/ARS
+  BGS:
+    repository: whl-svn
+    web-path: /fin/web/bgs
+    sisapp-path: /fin/sisapp/BGS
+  BKS:
+    repository: whl-svn
+    web-path: /fin/web/bks
+    sisapp-path: /fin/sisapp/BKS
+  ECR:
+    repository: whl-svn
+    web-path: /fin/web/ecr
+    sisapp-path: /fin/sisapp/ECR
+  FIN:
+    repository: whl-svn
+    web-path: /fin/web/fin
+    sisapp-path: /fin/sisapp/FIN
+  GLS:
+    repository: whl-svn
+    web-path: /fin/web/gls
+    sisapp-path: /fin/sisapp/GLS
+  NMS:
+    repository: whl-svn
+    web-path: /fin/web/nms
+    sisapp-path: /fin/sisapp/NMS
+  PAM:
+    repository: whl-svn
+    web-path: /fin/web/pam
+    sisapp-path: /fin/sisapp/PAM
+  PAY:
+    repository: whl-svn
+    web-path: /fin/web/pay
+    sisapp-path: /fin/sisapp/PAY
+  PCM:
+    repository: whl-svn
+    web-path: /fin/web/pcm
+    sisapp-path: /fin/sisapp/PCM
+  PCS:
+    repository: whl-svn
+    web-path: /fin/web/pcs
+    sisapp-path: /fin/sisapp/PCS
+  PTM:
+    repository: whl-svn
+    web-path: /fin/web/ptm
+    sisapp-path: /fin/sisapp/PTM
+  REC:
+    repository: whl-svn
+    web-path: /fin/web/rec
+    sisapp-path: /fin/sisapp/REC
+  REM:
+    repository: whl-svn
+    web-path: /fin/web/rem
+    sisapp-path: /fin/sisapp/REM
+  REV:
+    repository: whl-svn
+    web-path: /fin/web/rev
+    sisapp-path: /fin/sisapp/REV
+
