@@ -10,7 +10,7 @@ def get_version(version):
     :return: the mvn version, or local version number
     """
     if 'project.python.package.version' in version:
-        return '0.0.1'
+        return '0.0.2'
     return version
 
 
