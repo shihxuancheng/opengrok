@@ -1,6 +1,5 @@
 import argparse
 import json
-import logging
 import os
 import sys
 
@@ -10,7 +9,7 @@ import svn.utility
 
 from opengrok_tools.utils.log import fatal, get_class_basename, get_console_logger
 from opengrok_tools.utils.readconfig import read_config
-from .utils.parsers import get_base_parser
+from opengrok_tools.utils.parsers import get_base_parser
 from opengrok_tools.projadm import project_add
 
 SRC_ROOT = '.'

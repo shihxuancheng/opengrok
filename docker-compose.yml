@@ -1,0 +1,21 @@
+version: "3"
+
+# More info at https://github.com/oracle/opengrok/docker/
+services:
+  opengrok:
+    container_name: opengrok
+    # image: shihxuancheng/opengrok-tomcat10:latest
+    build:
+      context: docker
+    ports:
+      - "8080:8080/tcp"
+    restart: unless-stopped
+    environment:
+      SYNC_PERIOD_MINUTES: '30'
+      TZ: Asia/Taipei
+    # Volumes store your data between container upgrades
+    volumes:
+      # - '/data/opengrok:/opengrok'
+      - '/data/opengrok/src/:/opengrok/src/' # source code
+      - '/data/opengrok/etc/:/opengrok/etc/' # folder contains configuration.xml
+      - '/data/opengrok/data/:/opengrok/data/' # index and other things for source code

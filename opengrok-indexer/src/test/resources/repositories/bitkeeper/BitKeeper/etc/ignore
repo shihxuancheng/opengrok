@@ -1,5 +1,0 @@
-
-.project
-.cproject
-.settings -prune
-build -prune
